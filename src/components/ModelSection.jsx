@@ -4,8 +4,7 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import CarModel from '../model/2022_apollo_project_evo.glb';
 import { RGBELoader } from 'three/addons/loaders/RGBELoader.js';
-import logo from '../assets/car_logo-removebg-preview.png';
-import shape2 from '../assets/clip_shape_2.png'
+
 import Svg from '../components/Svg';
 import Story from '../components/Story';
 import Speed from '../components/Speed';
@@ -16,6 +15,7 @@ import Gallery from '../components/Gallery';
 import gsap from 'gsap';
 import Contact from '../components/Contact';
 import Video from '../components/Video';
+import Hero from '../components/Hero';
 import Intro2 from '../components/Intro2';
 
 export default function ModelSection() {
@@ -168,10 +168,8 @@ export default function ModelSection() {
 
   return (
     <section>
-      <div id="first" className="m-[2vw] rounded-xl bg-gradient-to-r from-[#C04922] to-[#131314]  relative w-full h-[93vh] mb-16 section">
-        <img src={logo} alt="logo" className="w-[6vw] inline-block m-4" />
-        <img className='absolute top-0 right-0 w-[40vw] z-30' src={shape2}/>
-        <h1 className="text-[20vw] font-bold text-[#C04922]/40 absolute top-1/2 right-10 -translate-y-1/2">0001</h1>
+      <div id="first" className='p-[2vw]'>
+    <Hero/>
       </div>
 
       <div id="second" className=" w-full h-screen section ">
