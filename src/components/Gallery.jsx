@@ -77,7 +77,7 @@ const Gallery = () => {
 
   return (
   
-      <div className="w-full bg-black/70 z-50 relative px-[2vw] mt-24">
+      <div className="w-full bg-black/70 z-50 relative px-[2vw] pt-24">
    <h1 className='text-[4vw] font-bold  relative leading-12 mb-10 bg-gradient-to-r from-[#C04922] to-zinc-900   animate-gradient bg-[length:200%] bg-clip-text text-transparent'>gallery
    <span className='absolute -bottom-4 left-0 w-full h-[4px] rounded-l-full bg-gradient-to-r from-[#C04922] to-transparent  '></span></h1>
 
