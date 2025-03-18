@@ -200,7 +200,7 @@ export default function ModelSection() {
       <div id="ninth" className="px-[2vw]  w-full h-screen section relative flex items-end justify-center">
        <h1 className='text-[1.3vw] border-[#C04922] border-t-[4px]  font-bold text-white/90 py-4'>The Apollo EVO &copy; 2025</h1>
       </div>
-      {/* <div ref={mountRef} className="carContainer fixed inset-0 z-10 pointer-events-none"></div> */}
+    <div ref={mountRef} className="carContainer fixed inset-0 z-10 pointer-events-none"></div> 
     </section>
   );
 }
