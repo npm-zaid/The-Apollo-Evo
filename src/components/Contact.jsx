@@ -1,5 +1,5 @@
 import React from 'react'
-import a_logo from '../assets/Apollo_logo_White.svg'
+import a_logo from '../assets/Apollo_logo_white.svg'
 import shape from '../assets/clip-shape.png'
 
 const Contact = () => {
@@ -13,7 +13,7 @@ const Contact = () => {
             </div>
             <div className='  h-full flex flex-col gap-12 justify-center items-start px-6'>
                 <div className='flex flex-col gap-3'>
-                    <h1 className='text-white text-[1.4vw]'>Hong Kong Office</h1>
+                    <h1 className='text-white/50 text-[1.4vw]'>Hong Kong Office</h1>
                     <p className='text-white/80 text-[1vw]'>Unit 2001–02, 20/F, Li Po Chun Chambers 189 Des Voeux Road Central, Hong Kong</p>
                 </div>
                 <div className='flex flex-col gap-3'>
