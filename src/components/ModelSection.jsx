@@ -158,11 +158,11 @@ export default function ModelSection() {
       { threshold: 0.5 }
     );
 
-    const eighthSection = document.getElementById("eighth");
-    if (eighthSection) observer.observe(eighthSection);
+    const ninthSection = document.getElementById("ninth");
+    if (ninthSection) observer.observe(ninthSection);
 
     return () => {
-      if (eighthSection) observer.unobserve(eighthSection);
+      if (ninthSection) observer.unobserve(ninthSection);
     };
   }, []);
 
@@ -196,11 +196,11 @@ export default function ModelSection() {
       <Video/>
       <Gallery/>
       <div id="seventh" className="px-[2vw] w-full h-screen section relative my-24"><Safety/></div>
-      <div id="eighth" className=" section relative my-24"><Contact/></div>
-      <div id="ninth" className="px-[2vw] w-full h-screen section relative flex items-end justify-center">
+      <div id="eighth" className=" section relative mt-24 mb-[40vh]"><Contact/></div>
+      <div id="ninth" className="px-[2vw]  w-full h-screen section relative flex items-end justify-center">
        <h1 className='text-[1.3vw] border-[#C04922] border-t-[4px]  font-bold text-white/90 py-4'>The Apollo EVO &copy; 2025</h1>
       </div>
-      <div ref={mountRef} className="carContainer fixed inset-0 z-10 pointer-events-none"></div>
+      {/* <div ref={mountRef} className="carContainer fixed inset-0 z-10 pointer-events-none"></div> */}
     </section>
   );
 }
