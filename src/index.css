@@ -1,0 +1,144 @@
+@import "tailwindcss";
+
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../src/assets/2589-LDR.ttf');
+  }
+  
+  body{
+    font-family: Satoshi;
+    background-color: #000000;
+  }
+  
+  
+  
+  @keyframes shine {
+    0% {
+      background-position: 200% center;
+    }
+    100% {
+      background-position:-200% center;
+    }
+  }
+  
+  .animate-gradient {
+    animation: shine 1s linear  infinite;
+  
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  pre{
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .scroller::-webkit-scrollbar{
+    width: 8px;
+  }
+  
+  
+  /* Track */
+  .scroller::-webkit-scrollbar-track {
+   display: none;
+  }
+   
+  /* Handle */
+  .scroller::-webkit-scrollbar-thumb{
+    background: #4b4b4f; 
+    border-radius: 10px;
+  }
+  
+  
+  .skeleton {
+    background: linear-gradient(
+      90deg,
+      rgba(86, 132, 209, 0.2) 25%,
+      rgba(19, 19, 20, 0.4) 50%,
+      rgba(86, 132, 209, 0.2) 75%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite linear;
+    border-radius: 6px;
+  }
+  
+  @keyframes shimmer {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }
+  
+  @keyframes shine {
+    0% {
+      background-position: -200% center;
+    }
+    100% {
+      background-position: 200% center;
+    }
+  }
+  
+  .animate-gradient {
+    animation: shine 10s linear  infinite;
+  }
+  .num{
+    writing-mode: vertical-lr;
+  }
+  
+  .boxes:hover .face1{
+    
+    box-shadow:
+      inset 0 0 60px #C04922 ,
+      inset 20px 0 80px #C04922,
+      inset -20px 0 80px black,
+      inset 20px 0 300px #C04922,
+      inset -20px 0 300px black,
+      0 0 50px #000000,
+      -10px 0 80px #C04922,
+      10px 0 80px black;
+  
+     
+  }
+
+  .row{
+    width: 100%;
+    display: flex;
+  }
+
+  .col{
+    flex: 1;
+    aspect-ratio: 1;
+  }
+
+  .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    will-change:  transform;
+  
+  }
+
+  .img[data-origin="left"]{
+    transform-origin: 0% 0%;
+  }
+
+  .img[data-origin="right"]{
+    transform-origin: 100% 0%;
+  }
+
+  *{
+    cursor: none;
+  }
+  
