@@ -51,7 +51,7 @@ const Intro2 = () => {
   ];
 
   return (
-    <section className="unique-text-container overflow-hidden">
+    <section className="unique-text-container overflow-hidden px-[3vw] h-screen flex items-center justify-center">
      
         <div className="text-white/70 text-[1.2vw]  flex flex-col gap-4 relative">
           {textLines.map((line, index) => (

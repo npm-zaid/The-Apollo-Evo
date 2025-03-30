@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import Lenis from '@studio-freight/lenis';
 import ModelSection from './components/ModelSection';
 import CursorFollower from './components/CursorFollower';
+import Loader from './components/Loader';
 const App = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < window.innerHeight);
   const lenisRef = useRef(null);
@@ -61,8 +62,8 @@ const App = () => {
         </div>
       ) : (
         <>
-        <ModelSection/>
-          <CursorFollower />
+       <ModelSection/>
+        
         </>
       )}
     </div>

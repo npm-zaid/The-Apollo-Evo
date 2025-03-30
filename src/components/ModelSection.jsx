@@ -168,7 +168,7 @@ export default function ModelSection() {
 
   return (
     <section>
-      <div id="first" className='p-[2vw]'>
+      <div id="first" className='m-[2vw]'>
     <Hero/>
       </div>
 
