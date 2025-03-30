@@ -63,7 +63,7 @@ const App = () => {
       ) : (
         <>
        <ModelSection/>
-        
+       <CursorFollower/>
         </>
       )}
     </div>

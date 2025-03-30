@@ -168,8 +168,10 @@ export default function ModelSection() {
 
   return (
     <section>
-      <div id="first" className='m-[2vw]'>
-    <Hero/>
+      <div className='p-[2vw]'>
+        <div id='first'>
+          <Hero/>
+        </div>
       </div>
 
       <div id="second" className=" w-full h-screen section ">
