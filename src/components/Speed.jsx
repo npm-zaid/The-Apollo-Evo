@@ -122,9 +122,9 @@ const Speed = () => {
   }, []);
 
   return (
-    <div ref={sectionRef} className='absolute bottom-0 right-0 w-full flex items-center justify-between bg-zinc-900/70 text-white/70 text-[1.5vw]'>
+    <div ref={sectionRef} className='px-[3vw] absolute bottom-0 right-0 w-full flex items-center justify-between  text-white/70 text-[1.5vw]'>
       {stats.map((stat, index) => (
-        <div key={index} className='border-l flex-1 border-[#C04922] border-l-[4px] p-4'>
+        <div key={index} className='bg-zinc-900/70 flex-1 border-[#C04922] border-l-[4px] p-4'>
           <p className='flex items-center'>
             {values[index].split('').map((digit, i) => (
               <motion.span

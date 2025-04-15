@@ -24,6 +24,7 @@ export default function ModelSection() {
   const isRotating = useRef(false); // Ref to track rotation state
 
   const carPositions = [
+    { id: 'zero', position: { x: 0, y: -1, z: 0 }, rotation: { x: 0, y: 0, z: 0 } },
     { id: 'first', position: { x: 0, y: -1, z: 0 }, rotation: { x: 0, y: 1.5, z: 0 } },
     { id: 'second', position: { x: 7, y: -1, z: 0 }, rotation: { x: 0, y: 1.5, z: 0 } },
     { id: 'third', position: { x: 0, y: -1, z: 0 }, rotation: { x: 0, y: 2.5, z: 0 } },
@@ -168,8 +169,10 @@ export default function ModelSection() {
 
   return (
     <section>
-      <div id="first" className='m-[2vw]'>
+      <div id='zero'>
+      <div id="first" className='m-[2vw]  bg-amber-300/40'>
     <Hero/>
+      </div>
       </div>
 
       <div id="second" className=" w-full h-screen section ">
@@ -187,7 +190,7 @@ export default function ModelSection() {
      <Intro2/>
       </div>
       
-      <div id="sixth" className="px-[2vw] w-full h-screen section relative"><Speed/></div>
+      <div id="sixth" className="w-full h-screen section relative"><Speed/></div>
       <div className="w-full h-screen section relative z-40">
        <UniqueCard/>
       </div>
