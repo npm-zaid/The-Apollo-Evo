@@ -23,7 +23,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="rounded-xl bg-gradient-to-r from-[#C04922] to-[#131314] relative w-full h-[93vh] mb-16 section flex items-center justify-center">
+    <div className="rounded-xl bg-gradient-to-r from-[#C04922] to-[#131314] relative w-full h-[93vh] mb-16  flex items-center justify-center">
       
       {/* Logo */}
       <img ref={logoRef} src={logo} alt="logo" className="w-[6vw] absolute top-4 left-4" />
